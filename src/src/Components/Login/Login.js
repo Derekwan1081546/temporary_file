@@ -50,7 +50,7 @@ const Login = ({ setUserState }) => {
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       console.log(user);
-      axios.post("http://localhost:8081/api/account/login", user).then((res) => {
+      axios.post("http://localhost:8080/api/account/login", user).then((res) => {
         alert(res.data);
         if(res.data == 'Success'){
           setUserState(res.data.user);
