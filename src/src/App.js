@@ -11,7 +11,7 @@ import Bin from "./Components/Upload/Bin";
 import IMGtoIMG from "./Components/img2img/IMGtoIMG";
 import TXTtoIMG from "./Components/txt2txt/TXTtoIMG";
 import Download2 from "./Components/Download2/Download";
-
+import Decode from "./Components/Model/Decode";
 function App() {
   const [userstate, setUserState] = useState({});
   return (
@@ -27,6 +27,7 @@ function App() {
           <Route path="/Viewupload" element={<Viewupload/>}></Route>
           <Route path="/TXTtoIMG" element={<TXTtoIMG/>}></Route>
           <Route path="/IMGtoIMG" element={<IMGtoIMG/>}></Route>
+          <Route path="/Decode" element={<Decode/>}/>
         </Routes>
       </Router>
     </div>

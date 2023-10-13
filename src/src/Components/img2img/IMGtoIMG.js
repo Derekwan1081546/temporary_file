@@ -116,12 +116,15 @@ function ImgPage() {
                 <button>TxtPage</button>
               </NavLink>
             </span>
+            <span>
+              <NavLink to="/Decode">
+                <button>SD PRODUCT</button>
+              </NavLink>
+            </span>
          </div>
         </div>
 
       </div>
-
-
 
       <div className="img2img-first-grid">
 
